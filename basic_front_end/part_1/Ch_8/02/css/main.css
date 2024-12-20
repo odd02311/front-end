@@ -1,0 +1,23 @@
+div{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+
+/*
+  박스 모델
+  요소의 가로/세로 너비:
+    width, height: 기본값으로 auto(브라우저가 너비를 계산)
+      단위: px, em, vw 등 단위로 지정
+    
+    max-width, max-height: none - 최대 너비 제한 없음 (기본값)
+      auto - 브라우저가 너비를 계산 (잘 사용하지 않음)
+      단위: px, em, vw 등 단위로 지정
+    
+    width와 height 속성의 역할: 
+      width: 요소의 가로 너비
+      height: 요소의 세로 너비
+    기본값은 auto
+    
+
+*/
