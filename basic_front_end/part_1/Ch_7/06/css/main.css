@@ -1,0 +1,35 @@
+
+/* 
+  가상 클래스 선택자
+  어떠한 행동을 했을때 동작하는 개념
+
+  ex): hover - 마우스를 올리면 css가 적용되는 가상 클래스 선택자
+
+  1. OOO:first-child:가상 클래스 선택자 FIRST-CHILD - 선택자 OOO가 형제 요소중 첫째라면 선택.
+
+  ex): .fruits span:first-child{
+        color: red;
+      }
+  
+  2. OOO:last-child: 가상 클래스 선택자 LAST-CHILD - 선택자 OOO가 형제 요소 중 막내라면 선택.
+
+  ex): .fruits h3:last-child{
+        color: red;
+        }
+  
+  3. OOO:nth-child(n): 가상 클래스 선택자 NTH-CHILD - 선택자 OOO가 형제 요소중 (n)째라면 선택.
+
+  * n은 0부터 시작 (Zero-Based Numbering) / 2n = 짝수 2n + 1 = 홀수
+
+  ex): .fruits *:nth-child(2) {
+        color: red;
+        }
+
+  4. OOO:not(XXX): 부정 선택자 - 선택자 XXX가 아닌 OOO 요소 선택
+
+  ex): .fruits *:not(span) {
+        color: red;
+        }
+
+  w
+*/

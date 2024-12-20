@@ -1,0 +1,34 @@
+div { color: red !important; }
+#color_yellow{ color: yellow; }
+.color_green{ color: green; }
+div { color: blue; }
+* { color: darkblue; }
+body{ color:violet; }
+
+
+
+/* 
+  선택자 우선순위:
+    우선순위란, 같은 요소가 여러 선언의 대상이 된 경우, 어떤 선언의 CSS 속성을 우선 적용할지 결정하는 방법
+
+    1. 점수가 높은 선언이 우선시 됨
+    2. 점수가 같으면, 가장 마지막에 해석된 선언이 우선시 됨
+
+
+div { color: red !important; }
+#color_yellow{ color: yellow; }
+.color_green{ color: green; }
+div { color: blue; }
+* { color: darkblue; }
+body{ color:violet; }
+
+  점수: !important; == 999999999999점
+        #color_yellow (ID 선택자) - 100점
+        .color_green (Class 선택자) - 10점
+        div (태그 선택자) - 1점
+        body (전체 선택자) - 0점
+        상속 - X
+        style ="color: orange;" (인라인 선언) - 1000점
+
+*/
+
