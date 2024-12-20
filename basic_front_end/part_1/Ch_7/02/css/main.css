@@ -1,0 +1,41 @@
+/* @import url("./box.css"); */
+
+span{
+  font-size: 50px;
+  color:blue;
+  text-decoration: underline;
+}
+
+
+
+div {
+  font-size: 100px;
+  color: blue;
+  margin: 20px;
+}
+
+/* 
+  CSS 선언 방식:
+
+  1. 내장 방식: <style></style>의 내용(Contnets)으로 스타일을 작성하는 방식
+  ex): <style>
+        div {
+          color: red;
+          margin: 20px;
+          }
+      </style>
+
+
+  2. 인라인 방식: 요소의 style 속성에 직접 스타일을 작성하는 방식 (선택자 없음)
+
+  ex): <div style="color": red; margin: 20px;"><div>
+
+
+  3. 링크 방식: <link />로 외부 CSS 문서를 가져와서 연결하는 방식
+
+  ex): <link rel="stylesheet" href="./css/main.css">
+
+  
+  4. @import 방식: @import 규칙으로 CSS 문서 안에서 또 다른 CSS 문서를 가져와 연결하는 방식
+  
+*/

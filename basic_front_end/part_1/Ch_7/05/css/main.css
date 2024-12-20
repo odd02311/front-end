@@ -1,0 +1,51 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: 0.6s;
+}
+
+.box:focus{
+    width: 300px;
+    background-color: royalblue;
+}
+
+/* input {
+
+} */
+
+input:focus {
+  background-color: orange;
+}
+/* 
+  가상 클래스 선택자
+  어떠한 행동을 했을때 동작하는 개념
+
+  ex): hover - 마우스를 올리면 css가 적용되는 가상 클래스 선택자
+
+  1. OOO:hover : 가상 클래스 선택자(Pseudo-Classes) HOVER - 선택자 OOO 요소에 마우스 커서가 올라가 있는 동안 선택
+
+  ex): a:hover {
+        color: red;
+      }
+  <a href="https://www.naver.com">NAVER</a>
+  마우스가 a 위로 올라가면 color: red; 스타일 속성이 적용됨
+
+  2. 000:active : 가상 클래스 선택자 ACTIVE - 선택자 OOO 요소에 마우스를 클릭하고 있는 동안 선택
+
+  ex): a:active {
+          color: red;
+        }
+  마우스로 a를 클릭하고 있을때만 color: red; 스타일 속성이 적용
+
+  3. OOO:focus 가상 클래스 선택자 FOCUS - 선택자 ABC가 포커스 되면 선택
+  *Focus가 될 수 있는 요소는 HTML 대화형 콘텐츠가 해당된다.
+    INPUT, A, BUTTON, LABEL, SELECT등 여러 요소가 있다.
+    그리고 HTML 대화형 콘텐츠 요소가 아니더라도,
+    tabindex 속성을 사용한 요소도 Focus가 될 수 있다.
+  
+  ex): input:focus {
+        background-color: orange;
+        }
+  
+*/

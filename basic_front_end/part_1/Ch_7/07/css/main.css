@@ -1,0 +1,41 @@
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+
+/* .box::before{
+  content:"-- ";
+
+} */
+
+.box::after{
+  content:"";
+  display: block;
+  width: 30px;
+  height:  30px;
+  background-color: royalblue;
+
+}
+
+
+/* 
+  가상 요소 선택자
+  *가상 요소 선택자는 더블 콜론을 쓴다 ::
+  인라인 요소이다.
+
+  1. OOO::before : 가상 요소 선택자 BEFORE - 선택자 OOO 요소의 내부 앞에 내용(Content)을 삽입.
+
+  ex): .box::before {
+        content: "앞!";
+        }
+ 
+  2. OOO::after : 가상 요소 선택자 AFTER - 선택자 OOO 요소의 내부 뒤에 내용(Content)을 삽입
+
+  ex): .box::after {
+        content: "뒤!";
+        }
+
+  
+  인라인 => 블럭요소로 전환하는 속성이 display:block; 
+*/
