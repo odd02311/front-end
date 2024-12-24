@@ -1,0 +1,22 @@
+.parent{
+  width: 100px;
+  height: 100px;
+  padding: 30px;
+  background-color: royalblue;
+}
+
+.child {
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  opacity: .5;
+}
+
+/*
+
+opacity: 요소 투명도
+
+1(기본 값): 불투명
+0 ~ 1: 0부터 1사이의 소수점 숫자
+
+*/

@@ -1,0 +1,29 @@
+/* 
+.container {
+
+} */
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+
+.item:first-child {
+  border: 4px solid red;  
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/*
+  box-sizing: 요소의 크기 계산 기준을 지정
+    content-box: 요소의 내용(content)으로 크기 계산
+    border-box: 요소의 내용 +padding + border로 크기 계산
+
+    가로/세로 너비를 명시한 그대로 수치를 사용하고 싶다면
+    padding, border 속성을 입력 했을때 크기가 커지지않게
+    border-box를 사용하면 된다.
+
+
+*/
