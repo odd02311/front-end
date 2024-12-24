@@ -1,0 +1,65 @@
+body{
+  padding: 100px;
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+  perspective: 250px;
+}
+
+.container .item {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateX(70deg);
+  backface-visibility: hidden;
+}
+
+/*
+  요소의 변환 효과
+  transform: 변환함수1 변환함수2 변환함수3 ...;
+  transform: 원근법 이동 크기 회전 기울임;
+
+  transform의 2D 변환 함수
+
+    translate(x, y): 이동 (x축, y축)
+    translateX(x): 이동 (x축)
+    translateY(y): 이동 (y축)
+    scale(x, y): 크기(x축, y축)
+
+    rotate(degree): 회전(각도)
+    skewX(x): 기울임(x축)
+    skewY(y): 기울임(y축)
+  
+  transform의 3D 변환 함수
+
+    translateZ(z): 이동(z축)
+    translate3d(x, y, z): 이동(x축, y축, z축)
+    scaleZ(z): 크기(z축)
+    scale3d(x, y, z) 크기(x축, y축, z축)
+
+    rotateX(x): 회전(x축)
+    rotateY(y): 회전(y축)
+
+    perspective(n): 원근법(거리)/ 원근법 함수는 제일 앞에 작성해야 한다.
+    
+  perspective: 하위 요소를 관찰하는 원근 거리를 지정
+    - perspective() 함수가 아니고 CSS 속성이다
+    
+    - 함수와 차이점: 
+    perspective: 600px; == 적용대상: 관찰 대상의 부모 == 기준점 설정: perspective-origin
+    transform: perspective(600px) == 적용대상: 관찰 대상 == 기준점 설정: transform-origin
+
+    단위: px 등 단위로 지정
+  
+  backface-visibility: 3D 변환으로 회전된 요소의 뒷면 숨김 여부
+
+    visible: 뒷면 보임
+    hidden: 뒷면 숨김
+  */
