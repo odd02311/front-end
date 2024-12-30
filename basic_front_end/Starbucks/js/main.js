@@ -92,3 +92,28 @@ promotionToggleBtn.addEventListener('click', function () {
     promotionToggleIcon.classList.remove('rotated');
   }
 });
+// 범위 랜덤 함수(소수점 2자리까지)
+function random(min, max) {
+  // `.toFixed()`를 통해 반환된 문자 데이터를,
+  // `parseFloat()`을 통해 소수점을 가지는 숫자 데이터로 변환
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+}
+
+
+// floating 애니메이션 처리 (gsap)
+function floatingObject(selector, delay, size) {
+  gsap.to(
+    selector, // 선택자
+    random(1.5, 2.5), // 애니메이션 동작 시간
+    { // 옵션
+      y: size,
+      repeat: -1,
+      yoyo: true, // yoyo = 한번 재생된 애니메이션을 되감기 하는 속성
+      ease: Power1.easeInOut,
+      delay: random(0, delay)
+    }
+  );
+}
+floatingObject('.floating1', 1, 15);
+floatingObject('.floating2', .5, 15);
+floatingObject('.floating3', 1.5, 20);
