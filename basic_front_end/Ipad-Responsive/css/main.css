@@ -1,0 +1,35 @@
+body{
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  word-break: keep-all; /* 영어눈 택스트를 단어 단위로 줄바꿈을 해주지만 한글은 안해준다 word-break: keep-all은 한글도 단어 단위로 줄바꾸 하게 해준다' */
+}
+
+/* HEADER */
+header{
+  background-color: #3a3a3a;
+}
+header .inner{
+  max-width: 1020px;
+  margin: 0 auto;
+}
+header ul.menu{
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+header ul.menu li{
+  display: flex;
+}
+header ul.menu li a{
+  padding: 0 10px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  color: #f5f5f5;
+  opacity: .8;
+  text-decoration: none;
+}
+header ul.menu li a:hover{
+  opacity: 1;
+}
